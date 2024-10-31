@@ -3,190 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ilha Bolsas</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Ilha Bolsas - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-    <header>
-        <h1>Ilha Bolsas</h1>
-        <nav>
-            <ul>
-                <li><a href="#lancamentos">Lançamentos</a></li>
-                <li><a href="#destaques">Destaques</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#seminovos">SemiNovos</a></li>
-                <li><a href="#sobre-nos">Sobre Nós</a></li>
-            </ul>
-        </nav>
+<body class="d-flex flex-column min-vh-100">
+    <header class="header bg-light py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" target="_self">
+                <img src="img/site/logo_IB.png" style="width: 35%;" alt="Logo Ilha Bolsas" class="logo">
+            </a>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="seminovos.html">Semi-Novos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destaques.html">Destaques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
-     <!-- Introdução -->
-
-    <section id="sobre-empresa">
-        <h2>Olá :)</h2>
-        <p>
-            Seja Bem-vindo à nossa Loja de Bolsas, onde a moda se encontra com a sustentabilidade! 
-            Somos uma empresa dedicada a oferecer uma seleção exclusiva de bolsas, tanto novas quanto usadas, 
-            que são cuidadosamente escolhidas para atender ao gosto e estilo de nossos clientes. 
-            Acreditamos que cada bolsa tem uma história e queremos ajudar você a encontrar a peça perfeita 
-            que combine com sua personalidade. 
-            <br>
-            Além disso, nos comprometemos com práticas sustentáveis, promovendo a reutilização de produtos 
-            e contribuindo para um futuro mais responsável e consciente. 
-            Nossa missão é proporcionar uma experiência de compra excepcional, com qualidade e estilo em cada detalhe.<br><br>
-        </p>
+    <section class="hero-section text-center d-flex flex-column align-items-center justify-content-center bg-light-pink py-5">
+        <h1 class="hero-title">Bem-vindo à Ilha Bolsas</h1>
+        <p class="hero-subtitle">Explore uma curadoria de bolsas novas e seminovas, unindo moda e sustentabilidade com estilo único!</p>
+        <a href="catalogo.html" class="btn btn-hero btn-pink mt-3">Veja Nosso Catálogo</a>
     </section>
 
-    <!-- Lançamentos -->
-
-    <section id="lancamentos">
-        <h2>Lançamentos</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <div class="produto">
-                    <img src="img/releases/release1.png" alt="Bolsa Lançamento 1">
-                    <p>Mochila Brooklyn Logo Pequena.</p>
-                </div>
-                <div class="produto">
-                    <img src="img/releases/release2.png" alt="Bolsa Lançamento 2">
-                    <p>Bolsa Neverfull MM.</p>
-                </div>
-                <div class="produto">
-                    <img src="img/releases/release3.png" alt="Bolsa Lançamento 3">
-                    <p>Bolsa Samsonite 3.0, Spectrolite M.</p>
-                </div>
-            </div>
-            <button class="carousel-btn prev-btn">&#10094;</button>
-            <button class="carousel-btn next-btn">&#10095;</button>
-        </div>
-    </section>
-
-    <!-- Destaques -->
-
-    <section id="destaques">
-        <h2>Destaques</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <div class="produto">
-                    <img src="img/destaque/destaque1.png" alt="Bolsa Destaque 1">
-                    <p>Mochila Fjällräven Kånken Laptop 15.</p>
-                </div>
-                <div class="produto">
-                    <img src="img/destaque/destaque2.png" alt="Bolsa Destaque 2">
-                    <p>Shoulder bag Herschel Cruz Strong Blue.</p>
-                </div>
-                <div class="produto">
-                    <img src="img/destaque/destaque3.png" alt="Bolsa Destaque 3">
-                    <p>Bolsa Neverfull MM.</p>
-                </div>
-            </div>
-            <button class="carousel-btn prev-btn">&#10094;</button>
-            <button class="carousel-btn next-btn">&#10095;</button>
-        </div>
-    </section>
-
-    <!-- Catálogo -->
-
-    <section id="catalogo" class="catalog">
+    <section class="search-section py-4 bg-light">
         <div class="container">
-            <h2>Catálogo</h2>
-            <div class="product-grid">
+            <form class="form-inline justify-content-center" action="resultados.html" method="GET">
+                <input class="form-control mr-sm-2 w-50" type="search" name="query" placeholder="Busque sua bolsa dos sonhos" aria-label="Pesquisar">
+                <button id="search-button" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </section>    
 
-                <h3>Masculina Internacional</h3>
-                <div class="product-row">
-                    <img src="img/inter/masc/1mascinter.png" alt="Bolsa Masculina 1">
-                    <img src="img/inter/masc/2mascinter.png" alt="Bolsa Masculina 2">
-                    <img src="img/inter/masc/3mascinter.png" alt="Bolsa Masculina 3">
+    <section class="featured-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Destaques da Semana</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/inter/fem/1feminter.png" class="card-img-top" alt="Bolsa 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa de Couro Clássica</h5>
+                            <p class="card-text">Elegante e prática para qualquer ocasião. Disponível em várias cores.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <h3>Masculina Nacional</h3>
-                <div class="product-row">
-                    <img src="img/nacional/masc/1masc.png" alt="Bolsa Masculina 4">
-                    <img src="img/nacional/masc/2masc.png" alt="Bolsa Masculina 5">
-                    <img src="img/nacional/masc/3masc.png" alt="Bolsa Masculina 6">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/inter/masc/1mascinter.png" class="card-img-top" alt="Bolsa 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa Tote Ecológica</h5>
+                            <p class="card-text">Feita de materiais reciclados. Ideal para o dia a dia com sustentabilidade.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <h3>Feminina Internacional</h3>
-                <div class="product-row">
-                    <img src="img/inter/fem/1feminter.png" alt="Bolsa Feminina 1">
-                    <img src="img/inter/fem/2feminter.png" alt="Bolsa Feminina 2">
-                    <img src="img/inter/fem/3feminter.png" alt="Bolsa Feminina 3">
-                </div>
-                
-                <h3>Feminina Nacional</h3>
-                <div class="product-row">
-                    <img src="img/nacional/fem/1fem.png" alt="Bolsa Feminina 4">
-                    <img src="img/nacional/fem/2fem.png" alt="Bolsa Feminina 5">
-                    <img src="img/nacional/fem/3fem.png" alt="Bolsa Feminina 6">
-                </div>
-
-                <h3>Unissex Internacional</h3>
-                <div class="product-row">
-                    <img src="img/inter/uni/1interuni.png" alt="Bolsa Unissex 1">
-                    <img src="img/inter/uni/2interuni.png" alt="Bolsa Unissex 2">
-                    <img src="img/inter/uni/3interuni.png" alt="Bolsa Unissex 3">
-                </div>
-                
-                <h3>Unissex Nacional</h3>
-                <div class="product-row">
-                    <img src="img/nacional/uni/1uni.png" alt="Bolsa Unissex 4">
-                    <img src="img/nacional/uni/2uni.png" alt="Bolsa Unissex 5">
-                    <img src="img/nacional/uni/3uni.png" alt="Bolsa Unissex 6">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/inter/uni/1interuni.png" class="card-img-top" alt="Bolsa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolsa Vintage Exclusiva</h5>
+                            <p class="card-text">Peça única que resgata o melhor do estilo retrô com charme.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SemiNovos -->
-
-    <section id="seminovos">
-        <h2>SemiNovos</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <div class="produto">
-                    <img src="img/usadas/1usada.jpg" alt="Bolsa SemiNova 1">
-                    <p>Chanel coco top handle laranja | Semi-Nova.</p>
+    <section class="testimonials-section bg-yellow py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Adorei a qualidade das bolsas! Realmente incrível!"</p>
+                        <footer class="blockquote-footer">Mariana Lima</footer>
+                    </blockquote>
                 </div>
-                <div class="produto">
-                    <img src="img/usadas/2usada.jpg" alt="Bolsa SemiNova 2">
-                    <p>Bolsa Chanel Chesterfield Flap Preta | Semi-Nova.</p>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Uma seleção única e com muita responsabilidade ambiental. Parabéns!"</p>
+                        <footer class="blockquote-footer">Lucas Rocha</footer>
+                    </blockquote>
                 </div>
-                <div class="produto">
-                    <img src="img/usadas/3usada.jpg" alt="Bolsa SemiNova 3">
-                    <p>Bolsa Capucines Mini | Semi-Nova.</p>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Minha bolsa chegou impecável, super recomendo para quem valoriza estilo e sustentabilidade."</p>
+                        <footer class="blockquote-footer">Ana Silva</footer>
+                    </blockquote>
                 </div>
             </div>
-            <button class="carousel-btn prev-btn">&#10094;</button>
-            <button class="carousel-btn next-btn">&#10095;</button>
         </div>
     </section>
 
-    <!-- Footer/Infos -->
-    <footer>
-        <div class="footer-content">
-            <h2 id="sobre-nos">Sobre Nós</h2>
+    <section id="contato" class="contact-section py-5">
+        <div class="container text-center ">
+            <h2 class="mb-5">Entre em Contato</h2>
             <p>
-                Bem-vindo à Ilha de bolsas! Somos uma marca que busca trazer ideias inovadoras ao mercado de moda. Nossa missão é oferecer a você uma experiência única, 
-                com produtos de qualidade e um atendimento excepcional. Na nossa loja, oferecemos uma curadoria de bolsas usadas com história e estilo. Cada peça é escolhida 
-                com carinho, garantindo qualidade e autenticidade. Acreditamos que a moda sustentável é o futuro e estamos aqui para tornar isso acessível a todos.
+                <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a><span class="mx-5">|</span>
+                <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
             </p>
-            <p>
-                Na nossa seção de usados, temos um compromisso com a sustentabilidade, realizando a compra e venda de bolsas usadas. Assim, você 
-                pode renovar seu estilo e contribuir para um mundo mais sustentável ao mesmo tempo.
-            </p>
-            <h2>SEPN 707/907 - Asa Norte, Brasília - DF, 70790-075</h2>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
-                <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
-            </div>
         </div>
-        <p class="footer-note">© 2024 Ilha Bolsas. Todos os direitos reservados.</p>
+    </section>
+
+    <footer class="footer bg-pink text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>&copy; Ilha Bolsas - Todos os direitos reservados</span>
+            <a href="https://github.com/1harz/IlhaBolsas" target="_blank" class="github-link">
+                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub">
+            </a>
+        </div>
     </footer>
 
-    <button id="back-to-top">&#8679;</button>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
