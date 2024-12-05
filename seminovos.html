@@ -39,33 +39,90 @@
         <p class="hero-subtitle">Descubra nossas opções de bolsas usadas em ótimo estado e com preços incríveis!</p>
     </section>
 
-    <section class="used-products py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">Compra e Venda de Bolsas Seminovas ⚠️</h2>
-            <p>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Compra e Venda de Bolsas Seminovas ⚠️</h2>
+            <p class="text-center">
                 Na Ilha Bolsas, acreditamos que cada bolsa tem uma história e merece uma segunda chance! Nossa seção de 
                 <strong>Bolsas Seminovas</strong> é dedicada a oferecer a você a oportunidade de vender e adquirir peças incríveis, 
                 unindo qualidade e sustentabilidade.
             </p>
-            <h4 class="mt-4">Venda sua Bolsa ❤️</h4>
-            <p>
-                Se você possui uma bolsa seminova que não usa mais, nós queremos comprá-la! Nossa equipe avalia cada peça 
-                cuidadosamente, garantindo que todas as bolsas em nossa coleção estejam em excelente estado. Isso significa que 
-                você pode transformar o que não usa em um dinheiro extra, além de contribuir para um consumo mais consciente.
-            </p>
-            <h4 class="mt-4">Compre com Confiabilidade</h4>
-            <p>
-                Navegue por nossa seleção de bolsas seminovas e descubra peças únicas a preços acessíveis. Cada bolsa é 
-                inspecionada e higienizada, oferecendo a você a mesma qualidade e estilo que esperaria de uma bolsa nova.
-            </p>
-            <p>
-                Na Ilha Bolsas, estamos comprometidos com a moda sustentável e com a satisfação de nossos clientes. Venha fazer 
-                parte dessa jornada e descubra como a moda pode ser tanto elegante quanto responsável!
-            </p>
+            <div class="accordion mt-4" id="accordionSeminovas">
+                <div class="card">
+                    <div class="card-header bg-pink" id="headingVenda">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white text-left w-100" style="text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseVenda" aria-expanded="true" aria-controls="collapseVenda">
+                                Venda sua Bolsa ❤️
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseVenda" class="collapse show" aria-labelledby="headingVenda" data-parent="#accordionSeminovas">
+                        <div class="card-body">
+                            Se você possui uma bolsa seminova que não usa mais, nós queremos comprá-la! Nossa equipe avalia cada peça 
+                            cuidadosamente, garantindo que todas as bolsas em nossa coleção estejam em excelente estado. Isso significa que 
+                            você pode transformar o que não usa em um dinheiro extra, além de contribuir para um consumo mais consciente.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-yellow" id="headingCompre">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-pink text-left w-100 collapsed text" style="text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseCompre" aria-expanded="false" aria-controls="collapseCompre">
+                                Compre com Confiabilidade
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseCompre" class="collapse" aria-labelledby="headingCompre" data-parent="#accordionSeminovas">
+                        <div class="card-body">
+                            Navegue por nossa seleção de bolsas seminovas e descubra peças únicas a preços acessíveis. Cada bolsa é 
+                            inspecionada e higienizada, oferecendo a você a mesma qualidade e estilo que esperaria de uma bolsa nova.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-pink" id="headingCompromisso">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white text-left w-100 collapsed" style="text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseCompromisso" aria-expanded="false" aria-controls="collapseCompromisso">
+                                Compromisso com a Moda Sustentável
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseCompromisso" class="collapse" aria-labelledby="headingCompromisso" data-parent="#accordionSeminovas">
+                        <div class="card-body">
+                            Na Ilha Bolsas, estamos comprometidos com a moda sustentável e com a satisfação de nossos clientes. Venha fazer 
+                            parte dessa jornada e descubra como a moda pode ser tanto elegante quanto responsável!
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="used-products py-5">
+    <section class="modal-section py-5 text-center">
+        <button type="button" class="btn btn-pink" data-toggle="modal" data-target="#promoModal">
+            Sobre Produtos Usados
+        </button>
+        <div class="modal fade" id="promoModal" tabindex="-1" role="dialog" aria-labelledby="promoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="promoModalLabel">⚠ Aviso ⚠</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bolsas Semi-Novas não tem garantia pós-venda, e, por isso, o produto deve ser observado atentamente antes da compra.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-pink" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-1">
         <div class="container">
             <h2 class="text-center mb-5">Nosso estoque de Bolsas Seminovas 😊</h2>
             <div class="row">

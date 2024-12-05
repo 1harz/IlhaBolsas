@@ -19,7 +19,7 @@ body {
 .text-pink { color: #f77fbe; }
 .hero-section { background-color: #ffdced; }
 .hero-title { font-size: 2.5em; font-weight: 700; }
-.btn-pink { background-color: #f77fbe; color: #fff; }
+.btn-pink { background-color: #ff8cb0; }
 .btn-pink:hover { background-color: #ff6596; }
 
 .search-section {

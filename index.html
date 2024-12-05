@@ -50,6 +50,10 @@
         </div>
     </section>    
 
+    <div class="alert alert-success" role="alert">
+        Em comemoração a conclusão do projeto, essa semana todas as bolsas terão garantia estendida em 3 meses!
+    </div>
+
     <section class="featured-products py-5">
         <div class="container">
             <h2 class="text-center mb-5">Destaques da Semana</h2>
@@ -58,7 +62,11 @@
                     <div class="card">
                         <img src="img/inter/fem/1feminter.png" class="card-img-top" alt="Bolsa 1">
                         <div class="card-body">
-                            <h5 class="card-title">Bolsa de Couro Clássica</h5>
+                            <h5 class="card-title">
+                                Bolsa de Couro Clássica
+                                <br>
+                                <span class="badge bg-primary">Novo</span>
+                            </h5>
                             <p class="card-text">Elegante e prática para qualquer ocasião. Disponível em várias cores.</p>
                         </div>
                     </div>
@@ -67,7 +75,10 @@
                     <div class="card">
                         <img src="img/inter/masc/1mascinter.png" class="card-img-top" alt="Bolsa 2">
                         <div class="card-body">
-                            <h5 class="card-title">Bolsa Tote Ecológica</h5>
+                            <h5 class="card-title">
+                                Bolsa Tote Ecológica 
+                                <span class="badge bg-success">Sustentável</span>
+                            </h5>
                             <p class="card-text">Feita de materiais reciclados. Ideal para o dia a dia com sustentabilidade.</p>
                         </div>
                     </div>
@@ -76,7 +87,10 @@
                     <div class="card">
                         <img src="img/inter/uni/1interuni.png" class="card-img-top" alt="Bolsa 3">
                         <div class="card-body">
-                            <h5 class="card-title">Bolsa Vintage Exclusiva</h5>
+                            <h5 class="card-title">
+                                Bolsa Vintage Exclusiva 
+                                <span class="badge bg-warning text-dark">Edição Limitada</span>
+                            </h5>
                             <p class="card-text">Peça única que resgata o melhor do estilo retrô com charme.</p>
                         </div>
                     </div>
@@ -84,26 +98,44 @@
             </div>
         </div>
     </section>
-
+    
     <section class="testimonials-section bg-yellow py-5">
         <div class="container">
             <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
             <div class="row">
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p>"Adorei a qualidade das bolsas! Realmente incrível!"</p>
+                        <p>
+                            <span data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                title="Feedback da Mariana Lima" 
+                                data-bs-content="Mariana comprou uma bolsa da nossa linha premium e ficou encantada com a qualidade!">
+                                "Adorei a qualidade das bolsas! Realmente incrível!"
+                            </span>
+                        </p>
                         <footer class="blockquote-footer">Mariana Lima</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p>"Uma seleção única e com muita responsabilidade ambiental. Parabéns!"</p>
+                        <p>
+                            <span data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                title="Feedback do Lucas Rocha" 
+                                data-bs-content="Lucas destacou nosso compromisso com a sustentabilidade ao escolher nossos produtos.">
+                                "Uma seleção única e com muita responsabilidade ambiental. Parabéns!"
+                            </span>
+                        </p>
                         <footer class="blockquote-footer">Lucas Rocha</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote">
-                        <p>"Minha bolsa chegou impecável, super recomendo para quem valoriza estilo e sustentabilidade."</p>
+                        <p>
+                            <span data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                title="Feedback da Ana Silva" 
+                                data-bs-content="Ana ficou muito satisfeita com a qualidade e estilo da bolsa que adquiriu.">
+                                "Minha bolsa chegou impecável, super recomendo para quem valoriza estilo e sustentabilidade."
+                            </span>
+                        </p>
                         <footer class="blockquote-footer">Ana Silva</footer>
                     </blockquote>
                 </div>
@@ -131,7 +163,18 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            popoverTriggerList.forEach(function (popoverTriggerEl) {
+                new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
